@@ -1,0 +1,9 @@
+.pt-input-group {
+  /*width: 30%;*/
+  margin-right: 5px;
+}
+
+.search-bar {
+  padding-top: 2%;
+  display: flex;
+}
