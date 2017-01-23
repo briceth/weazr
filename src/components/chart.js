@@ -1,12 +1,20 @@
+import _ from 'lodash';
 import React, { Component } from 'react';
-import { Sparklines, SparklinesLine } from 'react-sparklines';
+import { Sparklines, SparklinesLine, SparklinesReferenceLine } from 'react-sparklines';
+
+function average(data) {
+  return _.round(_.sum(data)/data.length)
+}
+
 
 export default (props) => {
   return(
     <div>
-      <Sparklines width={100} height={30} data={props.temps}>
+      <Sparklines width={180} height={120} data={props.temps}>
         <SparklinesLine color={props.color} />
+        <SparklinesReferenceLine type="mean" />
       </Sparklines>
+      <div>{average(props.temps)}</div>
     </div>
   )
 }
