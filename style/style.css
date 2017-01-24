@@ -1,12 +1,20 @@
 .pt-input-group {
-  /*width: 30%;*/
   margin-right: 5px;
-}
-
-.search-bar {
+  width: 40%;
   padding-top: 2%;
-  display: flex;
 }
 .pt-table {
   width: 90%;
+}
+td, th {
+  vertical-align: middle !important;
+  text-align: center !important;
+}
+
+svg {
+  height: 150px;
+}
+td:first-of-type, td:first-of-type > div {
+  height: 200px;
+  width: 250px;
 }

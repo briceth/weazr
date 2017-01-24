@@ -40,7 +40,6 @@ class searchBar extends Component {
           <button type='submit' className='pt-button pt-intent-success'>Submit</button>
         </span>
       </form>
-
     )
   }
 }
